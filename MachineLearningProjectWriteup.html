@@ -155,7 +155,7 @@ training.train.modelFit &lt;- fit.model(training.train)</code></pre>
 ## Resampling results
 ## 
 ##   Accuracy  Kappa
-##   0.996     0.995
+##   0.997     0.996
 ## 
 ## Tuning parameter 'mtry' was held constant at a value of 3
 ## </code></pre>
@@ -166,33 +166,33 @@ training.train.modelFit &lt;- fit.model(training.train)</code></pre>
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 2232    7    0    0    0
-##          B    0 1510   10    0    0
-##          C    0    1 1356   11    0
-##          D    0    0    2 1272    0
-##          E    0    0    0    3 1442
+##          A 2232    8    0    0    0
+##          B    0 1510   12    0    0
+##          C    0    0 1356   10    1
+##          D    0    0    0 1276    2
+##          E    0    0    0    0 1439
 ## 
 ## Overall Statistics
-##                                          
-##                Accuracy : 0.9957         
-##                  95% CI : (0.9939, 0.997)
-##     No Information Rate : 0.2845         
-##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16      
-##                                          
-##                   Kappa : 0.9945         
-##  Mcnemar's Test P-Value : NA             
+##                                           
+##                Accuracy : 0.9958          
+##                  95% CI : (0.9941, 0.9971)
+##     No Information Rate : 0.2845          
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.9947          
+##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            1.0000   0.9947   0.9912   0.9891   1.0000
-## Specificity            0.9988   0.9984   0.9981   0.9997   0.9995
-## Pos Pred Value         0.9969   0.9934   0.9912   0.9984   0.9979
-## Neg Pred Value         1.0000   0.9987   0.9981   0.9979   1.0000
+## Sensitivity            1.0000   0.9947   0.9912   0.9922   0.9979
+## Specificity            0.9986   0.9981   0.9983   0.9997   1.0000
+## Pos Pred Value         0.9964   0.9921   0.9920   0.9984   1.0000
+## Neg Pred Value         1.0000   0.9987   0.9981   0.9985   0.9995
 ## Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
-## Detection Rate         0.2845   0.1925   0.1728   0.1621   0.1838
-## Detection Prevalence   0.2854   0.1937   0.1744   0.1624   0.1842
-## Balanced Accuracy      0.9994   0.9966   0.9947   0.9944   0.9998</code></pre>
+## Detection Rate         0.2845   0.1925   0.1728   0.1626   0.1834
+## Detection Prevalence   0.2855   0.1940   0.1742   0.1629   0.1834
+## Balanced Accuracy      0.9993   0.9964   0.9948   0.9960   0.9990</code></pre>
 <p>The Accuracy is relatively high as well. So, let’s use it in predicting the “<strong>classe</strong>” variable for the real testing data, which we haven’t touched yet.</p>
 </div>
 <div id="submission-of-predictions" class="section level2">
